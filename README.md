@@ -5,6 +5,7 @@ Community contributed examples and code.
 ## Credits
 
 * [@The-Funk](https://github.com/The-Funk) for adding the [HAProxy](http://www.haproxy.org/) config.
+* [@soullivaneuh](https://github.com/soullivaneuh) for submitting the [Traefik](https://containo.us/traefik/) config.
 
 ## Notice
 
