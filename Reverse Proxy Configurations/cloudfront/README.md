@@ -2,7 +2,7 @@ From a customer's experience, this example uses Cloudfront to redirect users fro
 
 We created a cloudfront instance using our CNAME fusionauth-dev.id.example.com as the alternate domain name. We are also using our own ssl cert in this case.
 
-We have created an origin for example-dev.fusionauth.io like so, nothing really special.
+We have created an origin for example-dev.fusionauth.io, really nothing special.
 
 We have an associated behaviour with this origin allowing any http methods and no caching. We are able to attach this behaviour to a lambda@edge function:
 
