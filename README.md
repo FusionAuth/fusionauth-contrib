@@ -8,8 +8,10 @@ Community contributed examples and code.
 * [@soullivaneuh](https://github.com/soullivaneuh) for submitting the [Traefik](https://containo.us/traefik/) config.
 * [@cpellens](https://github.com/cpellens) for submitting the [Nginx dev config](https://www.nginx.com/) config.
 * [@pre-emptive](https://github.com/pre-emptive) for submitting the [Apache Virtual host config](https://httpd.apache.org/) config.
+* [@brennan-karrer](https://github.com/brennan-karrer) for the Elixir client libraries.
+* [@f0rever-johnson](https://github.com/f0rever-johnson) for the swift client libraries.
 
 ## Notice
 
-This is community maintained; and is provided to assist in your deployment and management of FusionAuth. Use of this software is not covered under the FusionAuth license agreement and is provided "as is" without warranty. https://fusionauth.io/license
+This is community maintained and is provided to assist in your deployment and management of FusionAuth. Use of this software is not covered under the FusionAuth license agreement and is provided "as is" without warranty. https://fusionauth.io/license
 
