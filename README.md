@@ -11,6 +11,14 @@ Community contributed examples and code.
 * [@brennan-karrer](https://github.com/brennan-karrer) for the Elixir client libraries.
 * [@f0rever-johnson](https://github.com/f0rever-johnson) for the swift client libraries.
 
+## Contributions
+
+Please feel free to submit a PR against this repository with any community contributions you run across.
+
+## Community Guidelines
+
+As part of the FusionAuth community, please abide by [the Code of Conduct](https://fusionauth.io/community/forum/topic/1000/code-of-conduct).
+
 ## Notice
 
 This is community maintained and is provided to assist in your deployment and management of FusionAuth. Use of this software is not covered under the FusionAuth license agreement and is provided "as is" without warranty. https://fusionauth.io/license
