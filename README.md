@@ -2,7 +2,7 @@
 Mono-repo of community contributed FusionAuth modules and example code.
 
 ## Client Libraries
-Links to code library projects not officially supported by FusionAuth.  See [README][client-libraries] for more details.
+Links to code library projects not officially supported by FusionAuth.  See [client-libraries/README][client-libraries] for more details.
 
 ## Kubernetes
 A collection of yaml manifests to deploy FusionAuth resources to a Kubernetes cluster.  See the [Kubernetes README][kubernetes] for detailed inventory and usage.
