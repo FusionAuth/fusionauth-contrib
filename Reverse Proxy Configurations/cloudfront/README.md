@@ -1,4 +1,21 @@
-From a customer's experience, this example uses Cloudfront to redirect users from a legacy path (`/authorize`) to the standard FusionAuth path: `/oauth2/authorize`. This allows you to use FusionAuth without requiring any changes to customer configuration (if they use the legacy path, they'll be transparently migrated.)
+# Cloudfront
+
+This is an AWS CDN that you can use to front FusionAuth.
+
+## Setup
+
+There's a sample JSON config in this directory. If you use it, make sure to update `REPLACE` with your values. If you find issues with it, please submit a PR.
+
+In general:
+
+* ensure the CDN isn't caching anything (you can re-enable caching and test once you have the initial error taken care of)
+* ensure the CDN is passing through all query parameters, cookies and headers
+* set up the load balancer in front of FusionAuth to respond to the hostname of the CDN. 
+* set the CDN to forward headers appropriately. In particular, ensure that X-Forwarded-Host is the value of the hostname of the CDN (XXX.cloudfront.net for example) and that X-Forwarded-Proto is https.
+
+## Legacy path support
+
+From a customer's experience, this below example uses Cloudfront to redirect users from a legacy path (`/authorize`) to the standard FusionAuth path: `/oauth2/authorize`. This allows you to use FusionAuth without requiring any changes to customer configuration (if they use the legacy path, they'll be transparently migrated.)
 
 We created a cloudfront instance using our CNAME fusionauth-dev.id.example.com as the alternate domain name. We are also using our own ssl cert in this case.
 
