@@ -10,6 +10,7 @@ Community contributed examples and code.
 * [@pre-emptive](https://github.com/pre-emptive) for submitting the [Apache Virtual host config](https://httpd.apache.org/) config.
 * [@brennan-karrer](https://github.com/brennan-karrer) for the Elixir client libraries.
 * [@f0rever-johnson](https://github.com/f0rever-johnson) for the swift client libraries.
+* János Veres for the Istio kubernetes config.
 
 ## Contributions
 
