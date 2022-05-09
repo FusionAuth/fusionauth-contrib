@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="23" passed="23" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-04T14:11:41 GMT-05:00" name="Command line suite" finished-at="2022-05-04T14:11:42 GMT-05:00" duration-ms="1783">
+    <groups>
+    </groups>
+    <test started-at="2022-05-04T14:11:41 GMT-05:00" name="Command line test" finished-at="2022-05-04T14:11:42 GMT-05:00" duration-ms="1783">
+      <class name="com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA256Keylength512PasswordHasherTest">
+        <test-method signature="encrypt(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA256Keylength512PasswordHasherTest@6b9651f3]" started-at="2022-05-04T14:11:41 GMT-05:00" name="encrypt" data-provider="hashes" finished-at="2022-05-04T14:11:42 GMT-05:00" duration-ms="285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jVqbuA9k2Mlo37OWXBMKLw==]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[LjFqvhPuUHJdQvWIwVQfqxjeujAWqG/DVQRFoOv62/cTznl9ob4jwWwY6i1RrwGviu5iNPU5VIp03SxDyetyfw==]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+        <test-method signature="encrypt(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA256Keylength512PasswordHasherTest@6b9651f3]" started-at="2022-05-04T14:11:42 GMT-05:00" name="encrypt" data-provider="hashes" finished-at="2022-05-04T14:11:42 GMT-05:00" duration-ms="255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[XnYZtiSCmFE5HF/ZplNCow==]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[OFb32+cOm0sgtEcmNiGC83A27Sk1gb0fynv0RUXBfFXEJ/EieUPlx4uDAGA/q0/FkX2iHO45qqoIqBesiYMIUg==]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+      </class> <!-- com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA256Keylength512PasswordHasherTest -->
+      <class name="com.mycompany.fusionauth.plugins.MyExamplePasswordEncryptorTest">
+        <test-method signature="encrypt()[pri:0, instance:com.mycompany.fusionauth.plugins.MyExamplePasswordEncryptorTest@6b57696f]" started-at="2022-05-04T14:11:41 GMT-05:00" name="encrypt" finished-at="2022-05-04T14:11:41 GMT-05:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+      </class> <!-- com.mycompany.fusionauth.plugins.MyExamplePasswordEncryptorTest -->
+      <class name="com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest">
+        <test-method signature="Should_ThrowException_When_MemoryGreaterThan16_777_215Kibibytes()[pri:0, instance:com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest@687080dc]" started-at="2022-05-04T14:11:42 GMT-05:00" name="Should_ThrowException_When_MemoryGreaterThan16_777_215Kibibytes" finished-at="2022-05-04T14:11:42 GMT-05:00" duration-ms="143" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Invalid Memory Cost value [16384] it must be an integer from 1 to 16,383 ((2^(24)-1)/1024).]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Invalid Memory Cost value [16384] it must be an integer from 1 to 16,383 ((2^(24)-1)/1024).
+at com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptor.setMemoryCost(ExampleArgon2idPasswordEncryptor.java:117)
+at com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest.Should_ThrowException_When_MemoryGreaterThan16_777_215Kibibytes(ExampleArgon2idPasswordEncryptorTest.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_ThrowException_When_MemoryGreaterThan16_777_215Kibibytes -->
+        <test-method signature="Should_ThrowException_When_MemoryLessThan1()[pri:0, instance:com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest@687080dc]" started-at="2022-05-04T14:11:42 GMT-05:00" name="Should_ThrowException_When_MemoryLessThan1" finished-at="2022-05-04T14:11:42 GMT-05:00" duration-ms="1" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Invalid Memory Cost value [0] it must be an integer from 1 to 16,383 ((2^(24)-1)/1024).]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Invalid Memory Cost value [0] it must be an integer from 1 to 16,383 ((2^(24)-1)/1024).
+at com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptor.setMemoryCost(ExampleArgon2idPasswordEncryptor.java:117)
+at com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest.Should_ThrowException_When_MemoryLessThan1(ExampleArgon2idPasswordEncryptorTest.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_ThrowException_When_MemoryLessThan1 -->
+        <test-method signature="Should_ThrowException_When_ParallelismLessThan1()[pri:0, instance:com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest@687080dc]" started-at="2022-05-04T14:11:42 GMT-05:00" name="Should_ThrowException_When_ParallelismLessThan1" finished-at="2022-05-04T14:11:42 GMT-05:00" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Invalid Parallelism value [0] it must be an integer greater, or equal to 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Invalid Parallelism value [0] it must be an integer greater, or equal to 1
+at com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptor.setParallelism(ExampleArgon2idPasswordEncryptor.java:131)
+at com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest.Should_ThrowException_When_ParallelismLessThan1(ExampleArgon2idPasswordEncryptorTest.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_ThrowException_When_ParallelismLessThan1 -->
+        <test-method signature="Should_ThrowException_When_TimeCostLessThan1()[pri:0, instance:com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest@687080dc]" started-at="2022-05-04T14:11:42 GMT-05:00" name="Should_ThrowException_When_TimeCostLessThan1" finished-at="2022-05-04T14:11:42 GMT-05:00" duration-ms="1" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Invalid Time Cost value [0] it must be an integer greater, or equal to 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Invalid Time Cost value [0] it must be an integer greater, or equal to 1
+at com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptor.setTimeCost(ExampleArgon2idPasswordEncryptor.java:102)
+at com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest.Should_ThrowException_When_TimeCostLessThan1(ExampleArgon2idPasswordEncryptorTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_ThrowException_When_TimeCostLessThan1 -->
+        <test-method signature="encrypt()[pri:0, instance:com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest@687080dc]" started-at="2022-05-04T14:11:42 GMT-05:00" name="encrypt" finished-at="2022-05-04T14:11:42 GMT-05:00" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+      </class> <!-- com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest -->
+      <class name="com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltAppendedPasswordEncryptorTest">
+        <test-method signature="encrypt()[pri:0, instance:com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltAppendedPasswordEncryptorTest@5bb21b69]" started-at="2022-05-04T14:11:41 GMT-05:00" name="encrypt" finished-at="2022-05-04T14:11:41 GMT-05:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+      </class> <!-- com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltAppendedPasswordEncryptorTest -->
+      <class name="com.mycompany.fusionauth.plugins.ExamplePHPMD5SaltedPasswordEncryptorTest">
+        <test-method signature="encrypt(java.lang.String, int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.mycompany.fusionauth.plugins.ExamplePHPMD5SaltedPasswordEncryptorTest@2c039ac6]" started-at="2022-05-04T14:11:41 GMT-05:00" name="encrypt" data-provider="hashes" finished-at="2022-05-04T14:11:41 GMT-05:00" duration-ms="30" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[$P$9IQRaTwmfeRo7ud9Fh4E2PdI0S3r.L0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2048]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[eRo7ud9Fh4E2PdI0S3r.L0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[IQRaTwmf]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[test12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+        <test-method signature="encrypt(java.lang.String, int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.mycompany.fusionauth.plugins.ExamplePHPMD5SaltedPasswordEncryptorTest@2c039ac6]" started-at="2022-05-04T14:11:41 GMT-05:00" name="encrypt" data-provider="hashes" finished-at="2022-05-04T14:11:41 GMT-05:00" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[$P$Buvd5FQxkeXJnDarN7..wRMwRKJeZ40]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8192]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[eXJnDarN7..wRMwRKJeZ40]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[uvd5FQxk]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[!?!#?#?#$&@&@!&@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+        <test-method signature="encrypt(java.lang.String, int, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.mycompany.fusionauth.plugins.ExamplePHPMD5SaltedPasswordEncryptorTest@2c039ac6]" started-at="2022-05-04T14:11:41 GMT-05:00" name="encrypt" data-provider="hashes" finished-at="2022-05-04T14:11:41 GMT-05:00" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[$P$BVaXtDXwf/ceSVp8VpLKx8bS2Y4O5F/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8192]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[/ceSVp8VpLKx8bS2Y4O5F/]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[VaXtDXwf]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+      </class> <!-- com.mycompany.fusionauth.plugins.ExamplePHPMD5SaltedPasswordEncryptorTest -->
+      <class name="com.mycompany.fusionauth.plugins.ExampleFirebaseScryptPasswordEncryptorTest">
+        <test-method signature="encrypt()[pri:0, instance:com.mycompany.fusionauth.plugins.ExampleFirebaseScryptPasswordEncryptorTest@9a7504c]" started-at="2022-05-04T14:11:41 GMT-05:00" name="encrypt" finished-at="2022-05-04T14:11:41 GMT-05:00" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+      </class> <!-- com.mycompany.fusionauth.plugins.ExampleFirebaseScryptPasswordEncryptorTest -->
+      <class name="com.mycompany.fusionauth.plugins.ExampleLDAPSaltedSHA512PasswordEncryptorTest">
+        <test-method signature="encrypt()[pri:0, instance:com.mycompany.fusionauth.plugins.ExampleLDAPSaltedSHA512PasswordEncryptorTest@58c1670b]" started-at="2022-05-04T14:11:41 GMT-05:00" name="encrypt" finished-at="2022-05-04T14:11:41 GMT-05:00" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+      </class> <!-- com.mycompany.fusionauth.plugins.ExampleLDAPSaltedSHA512PasswordEncryptorTest -->
+      <class name="com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltedPasswordEncryptorTest">
+        <test-method signature="encrypt()[pri:0, instance:com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltedPasswordEncryptorTest@23d2a7e8]" started-at="2022-05-04T14:11:42 GMT-05:00" name="encrypt" finished-at="2022-05-04T14:11:42 GMT-05:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+      </class> <!-- com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltedPasswordEncryptorTest -->
+      <class name="com.mycompany.fusionauth.plugins.ExampleSaltedSHA512PasswordEncryptorTest">
+        <test-method signature="encrypt()[pri:0, instance:com.mycompany.fusionauth.plugins.ExampleSaltedSHA512PasswordEncryptorTest@38bc8ab5]" started-at="2022-05-04T14:11:42 GMT-05:00" name="encrypt" finished-at="2022-05-04T14:11:42 GMT-05:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+      </class> <!-- com.mycompany.fusionauth.plugins.ExampleSaltedSHA512PasswordEncryptorTest -->
+      <class name="com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest">
+        <test-method signature="encrypt(java.lang.String, java.lang.String)[pri:0, instance:com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest@3e57cd70]" started-at="2022-05-04T14:11:41 GMT-05:00" name="encrypt" data-provider="hashes" finished-at="2022-05-04T14:11:41 GMT-05:00" duration-ms="111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[supersecret]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AJERV+ZvwakXg+AP09yPDJtwucf/9+jsoAGoeB8CMTzr0bsEQL3IQ4StQ/8/EmwHFA==]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+        <test-method signature="encrypt(java.lang.String, java.lang.String)[pri:0, instance:com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest@3e57cd70]" started-at="2022-05-04T14:11:41 GMT-05:00" name="encrypt" data-provider="hashes" finished-at="2022-05-04T14:11:41 GMT-05:00" duration-ms="19" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[supersecret]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AEhNvtxbnvkRnAEPRS6ol0Edi+WF6AtXOwDk3Eck/dfeUpCulPX1yVU4G9UpFRycjQ==]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+        <test-method signature="encrypt(java.lang.String, java.lang.String)[pri:0, instance:com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest@3e57cd70]" started-at="2022-05-04T14:11:41 GMT-05:00" name="encrypt" data-provider="hashes" finished-at="2022-05-04T14:11:41 GMT-05:00" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[supersecret]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AI0060+guxTYvJPL3kEqAzDwW3Avnpbd7+lTXM/K8ft7433JMy1PS/pSmhBIX3xotw==]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+        <test-method signature="encrypt(java.lang.String, java.lang.String)[pri:0, instance:com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest@3e57cd70]" started-at="2022-05-04T14:11:41 GMT-05:00" name="encrypt" data-provider="hashes" finished-at="2022-05-04T14:11:41 GMT-05:00" duration-ms="17" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[supersecret]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AM0P7hfdDHw2d0Y9lZoxN9FY5v7rn8cfEL1AGngrNmFxZLPZs832m+lWPlPIepyuoQ==]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+        <test-method signature="encrypt(java.lang.String, java.lang.String)[pri:0, instance:com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest@3e57cd70]" started-at="2022-05-04T14:11:41 GMT-05:00" name="encrypt" data-provider="hashes" finished-at="2022-05-04T14:11:41 GMT-05:00" duration-ms="14" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[supersecret]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AGlXna8THOKvQJGBFentzM11DRO65gdWYwrUM9G4iFKY2DFt4qFc1/O/zaFTEikaOA==]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+      </class> <!-- com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest -->
+      <class name="com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA1PasswordEncryptorTest">
+        <test-method signature="encrypt(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA1PasswordEncryptorTest@587d1d39]" started-at="2022-05-04T14:11:41 GMT-05:00" name="encrypt" data-provider="hashes" finished-at="2022-05-04T14:11:41 GMT-05:00" duration-ms="132" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[password123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1484161696d0ca62390273b98846f49671cecd78]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4761D3392092F9CA6036B53DC92C6D7F3D597576]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+        <test-method signature="encrypt(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA1PasswordEncryptorTest@587d1d39]" started-at="2022-05-04T14:11:41 GMT-05:00" name="encrypt" data-provider="hashes" finished-at="2022-05-04T14:11:41 GMT-05:00" duration-ms="151" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[password123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ea95629c7954d73ea670f07a798e9fd4ab907593]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9480AD9A59CB5053B832BA5E731AFCD1F78068EC]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encrypt -->
+      </class> <!-- com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA1PasswordEncryptorTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

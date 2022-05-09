@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
+              <span class="suite-name border-passed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Command_line_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Command_line_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Command_line_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Command_line_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Command_line_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Command_line_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Command_line_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">23 methods,   23 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest" class="method navigator-link" hash-for-method="Should_ThrowException_When_MemoryGreaterThan16_777_215Kibibytes">Should_ThrowException_When_MemoryGreaterThan16_777_215Kibibytes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest" class="method navigator-link" hash-for-method="Should_ThrowException_When_MemoryLessThan1">Should_ThrowException_When_MemoryLessThan1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest" class="method navigator-link" hash-for-method="Should_ThrowException_When_ParallelismLessThan1">Should_ThrowException_When_ParallelismLessThan1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest" class="method navigator-link" hash-for-method="Should_ThrowException_When_TimeCostLessThan1">Should_ThrowException_When_TimeCostLessThan1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExamplePHPMD5SaltedPasswordEncryptorTest" class="method navigator-link" hash-for-method="encrypt($P$9IQRaTwmfeRo7ud9Fh4E2PdI0S3r.L0, 2048, eRo7ud9Fh4E2PdI0S3r.L0, IQRaTwmf, test12345)">encrypt($P$9IQRaTwmfeRo7ud9Fh4E2PdI0S3r.L0, 2048, eRo7ud9Fh4E2PdI0S3r.L0, IQRaTwmf, test12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExamplePHPMD5SaltedPasswordEncryptorTest" class="method navigator-link" hash-for-method="encrypt($P$BVaXtDXwf/ceSVp8VpLKx8bS2Y4O5F/, 8192, /ceSVp8VpLKx8bS2Y4O5F/, VaXtDXwf, 123456)">encrypt($P$BVaXtDXwf/ceSVp8VpLKx8bS2Y4O5F/, 8192, /ceSVp8VpLKx8bS2Y4O5F/, VaXtDXwf, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltAppendedPasswordEncryptorTest" class="method navigator-link" hash-for-method="encrypt">encrypt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA1PasswordEncryptorTest" class="method navigator-link" hash-for-method="encrypt(password123, ea95629c7954d73ea670f07a798e9fd4ab907593, 9480AD9A59CB5053B832BA5E731AFCD1F78068EC)">encrypt(password123, ea95629c7954d73ea670f07a798e9fd4ab907593, 9480AD9A59CB5053B832BA5E731AFCD1F78068EC)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest" class="method navigator-link" hash-for-method="encrypt">encrypt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExampleLDAPSaltedSHA512PasswordEncryptorTest" class="method navigator-link" hash-for-method="encrypt">encrypt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExampleFirebaseScryptPasswordEncryptorTest" class="method navigator-link" hash-for-method="encrypt">encrypt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExamplePHPMD5SaltedPasswordEncryptorTest" class="method navigator-link" hash-for-method="encrypt($P$Buvd5FQxkeXJnDarN7..wRMwRKJeZ40, 8192, eXJnDarN7..wRMwRKJeZ40, uvd5FQxk, !?!#?#?#$&amp;@&amp;@!&amp;@)">encrypt($P$Buvd5FQxkeXJnDarN7..wRMwRKJeZ40, 8192, eXJnDarN7..wRMwRKJeZ40, uvd5FQxk, !?!#?#?#$&@&@!&@)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.MyExamplePasswordEncryptorTest" class="method navigator-link" hash-for-method="encrypt">encrypt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest" class="method navigator-link" hash-for-method="encrypt(supersecret, AGlXna8THOKvQJGBFentzM11DRO65gdWYwrUM9G4iFKY2DFt4qFc1/O/zaFTEikaOA==)">encrypt(supersecret, AGlXna8THOKvQJGBFentzM11DRO65gdWYwrUM9G4iFKY2DFt4qFc1/O/zaFTEikaOA==)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest" class="method navigator-link" hash-for-method="encrypt(supersecret, AJERV+ZvwakXg+AP09yPDJtwucf/9+jsoAGoeB8CMTzr0bsEQL3IQ4StQ/8/EmwHFA==)">encrypt(supersecret, AJERV+ZvwakXg+AP09yPDJtwucf/9+jsoAGoeB8CMTzr0bsEQL3IQ4StQ/8/EmwHFA==)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA1PasswordEncryptorTest" class="method navigator-link" hash-for-method="encrypt(password123, 1484161696d0ca62390273b98846f49671cecd78, 4761D3392092F9CA6036B53DC92C6D7F3D597576)">encrypt(password123, 1484161696d0ca62390273b98846f49671cecd78, 4761D3392092F9CA6036B53DC92C6D7F3D597576)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExampleSaltedSHA512PasswordEncryptorTest" class="method navigator-link" hash-for-method="encrypt">encrypt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest" class="method navigator-link" hash-for-method="encrypt(supersecret, AI0060+guxTYvJPL3kEqAzDwW3Avnpbd7+lTXM/K8ft7433JMy1PS/pSmhBIX3xotw==)">encrypt(supersecret, AI0060+guxTYvJPL3kEqAzDwW3Avnpbd7+lTXM/K8ft7433JMy1PS/pSmhBIX3xotw==)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA256Keylength512PasswordHasherTest" class="method navigator-link" hash-for-method="encrypt(password, XnYZtiSCmFE5HF/ZplNCow==, OFb32+cOm0sgtEcmNiGC83A27Sk1gb0fynv0RUXBfFXEJ/EieUPlx4uDAGA/q0/F...)">encrypt(password, XnYZtiSCmFE5HF/ZplNCow==, OFb32+cOm0sgtEcmNiGC83A27Sk1gb0fynv0RUXBfFXEJ/EieUPlx4uDAGA/q0/F...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest" class="method navigator-link" hash-for-method="encrypt(supersecret, AM0P7hfdDHw2d0Y9lZoxN9FY5v7rn8cfEL1AGngrNmFxZLPZs832m+lWPlPIepyuoQ==)">encrypt(supersecret, AM0P7hfdDHw2d0Y9lZoxN9FY5v7rn8cfEL1AGngrNmFxZLPZs832m+lWPlPIepyuoQ==)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest" class="method navigator-link" hash-for-method="encrypt(supersecret, AEhNvtxbnvkRnAEPRS6ol0Edi+WF6AtXOwDk3Eck/dfeUpCulPX1yVU4G9UpFRycjQ==)">encrypt(supersecret, AEhNvtxbnvkRnAEPRS6ol0Edi+WF6AtXOwDk3Eck/dfeUpCulPX1yVU4G9UpFRycjQ==)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA256Keylength512PasswordHasherTest" class="method navigator-link" hash-for-method="encrypt(password, jVqbuA9k2Mlo37OWXBMKLw==, LjFqvhPuUHJdQvWIwVQfqxjeujAWqG/DVQRFoOv62/cTznl9ob4jwWwY6i1RrwGv...)">encrypt(password, jVqbuA9k2Mlo37OWXBMKLw==, LjFqvhPuUHJdQvWIwVQfqxjeujAWqG/DVQRFoOv62/cTznl9ob4jwWwY6i1RrwGv...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltedPasswordEncryptorTest" class="method navigator-link" hash-for-method="encrypt">encrypt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mycompany.fusionauth.plugins.ExamplePHPMD5SaltedPasswordEncryptorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt($P$9IQRaTwmfeRo7ud9Fh4E2PdI0S3r.L0, 2048, eRo7ud9Fh4E2PdI0S3r.L0, IQRaTwmf, test12345)">
+                  </a> <!-- encrypt($P$9IQRaTwmfeRo7ud9Fh4E2PdI0S3r.L0, 2048, eRo7ud9Fh4E2PdI0S3r.L0, IQRaTwmf, test12345) -->
+                  <span class="method-name">encrypt</span>
+                  <span class="parameters">($P$9IQRaTwmfeRo7ud9Fh4E2PdI0S3r.L0, 2048, eRo7ud9Fh4E2PdI0S3r.L0, IQRaTwmf, test12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt($P$BVaXtDXwf/ceSVp8VpLKx8bS2Y4O5F/, 8192, /ceSVp8VpLKx8bS2Y4O5F/, VaXtDXwf, 123456)">
+                  </a> <!-- encrypt($P$BVaXtDXwf/ceSVp8VpLKx8bS2Y4O5F/, 8192, /ceSVp8VpLKx8bS2Y4O5F/, VaXtDXwf, 123456) -->
+                  <span class="method-name">encrypt</span>
+                  <span class="parameters">($P$BVaXtDXwf/ceSVp8VpLKx8bS2Y4O5F/, 8192, /ceSVp8VpLKx8bS2Y4O5F/, VaXtDXwf, 123456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt($P$Buvd5FQxkeXJnDarN7..wRMwRKJeZ40, 8192, eXJnDarN7..wRMwRKJeZ40, uvd5FQxk, !?!#?#?#$&amp;@&amp;@!&amp;@)">
+                  </a> <!-- encrypt($P$Buvd5FQxkeXJnDarN7..wRMwRKJeZ40, 8192, eXJnDarN7..wRMwRKJeZ40, uvd5FQxk, !?!#?#?#$&@&@!&@) -->
+                  <span class="method-name">encrypt</span>
+                  <span class="parameters">($P$Buvd5FQxkeXJnDarN7..wRMwRKJeZ40, 8192, eXJnDarN7..wRMwRKJeZ40, uvd5FQxk, !?!#?#?#$&@&@!&@)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_ThrowException_When_MemoryGreaterThan16_777_215Kibibytes">
+                  </a> <!-- Should_ThrowException_When_MemoryGreaterThan16_777_215Kibibytes -->
+                  <span class="method-name">Should_ThrowException_When_MemoryGreaterThan16_777_215Kibibytes</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_ThrowException_When_MemoryLessThan1">
+                  </a> <!-- Should_ThrowException_When_MemoryLessThan1 -->
+                  <span class="method-name">Should_ThrowException_When_MemoryLessThan1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_ThrowException_When_ParallelismLessThan1">
+                  </a> <!-- Should_ThrowException_When_ParallelismLessThan1 -->
+                  <span class="method-name">Should_ThrowException_When_ParallelismLessThan1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_ThrowException_When_TimeCostLessThan1">
+                  </a> <!-- Should_ThrowException_When_TimeCostLessThan1 -->
+                  <span class="method-name">Should_ThrowException_When_TimeCostLessThan1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt">
+                  </a> <!-- encrypt -->
+                  <span class="method-name">encrypt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mycompany.fusionauth.plugins.ExampleLDAPSaltedSHA512PasswordEncryptorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt">
+                  </a> <!-- encrypt -->
+                  <span class="method-name">encrypt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA256Keylength512PasswordHasherTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt(password, XnYZtiSCmFE5HF/ZplNCow==, OFb32+cOm0sgtEcmNiGC83A27Sk1gb0fynv0RUXBfFXEJ/EieUPlx4uDAGA/q0/F...)">
+                  </a> <!-- encrypt(password, XnYZtiSCmFE5HF/ZplNCow==, OFb32+cOm0sgtEcmNiGC83A27Sk1gb0fynv0RUXBfFXEJ/EieUPlx4uDAGA/q0/F...) -->
+                  <span class="method-name">encrypt</span>
+                  <span class="parameters">(password, XnYZtiSCmFE5HF/ZplNCow==, OFb32+cOm0sgtEcmNiGC83A27Sk1gb0fynv0RUXBfFXEJ/EieUPlx4uDAGA/q0/FkX2iHO45qqoIqBesiYMIUg==)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt(password, jVqbuA9k2Mlo37OWXBMKLw==, LjFqvhPuUHJdQvWIwVQfqxjeujAWqG/DVQRFoOv62/cTznl9ob4jwWwY6i1RrwGv...)">
+                  </a> <!-- encrypt(password, jVqbuA9k2Mlo37OWXBMKLw==, LjFqvhPuUHJdQvWIwVQfqxjeujAWqG/DVQRFoOv62/cTznl9ob4jwWwY6i1RrwGv...) -->
+                  <span class="method-name">encrypt</span>
+                  <span class="parameters">(password, jVqbuA9k2Mlo37OWXBMKLw==, LjFqvhPuUHJdQvWIwVQfqxjeujAWqG/DVQRFoOv62/cTznl9ob4jwWwY6i1RrwGviu5iNPU5VIp03SxDyetyfw==)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mycompany.fusionauth.plugins.ExampleFirebaseScryptPasswordEncryptorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt">
+                  </a> <!-- encrypt -->
+                  <span class="method-name">encrypt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA1PasswordEncryptorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt(password123, ea95629c7954d73ea670f07a798e9fd4ab907593, 9480AD9A59CB5053B832BA5E731AFCD1F78068EC)">
+                  </a> <!-- encrypt(password123, ea95629c7954d73ea670f07a798e9fd4ab907593, 9480AD9A59CB5053B832BA5E731AFCD1F78068EC) -->
+                  <span class="method-name">encrypt</span>
+                  <span class="parameters">(password123, ea95629c7954d73ea670f07a798e9fd4ab907593, 9480AD9A59CB5053B832BA5E731AFCD1F78068EC)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt(password123, 1484161696d0ca62390273b98846f49671cecd78, 4761D3392092F9CA6036B53DC92C6D7F3D597576)">
+                  </a> <!-- encrypt(password123, 1484161696d0ca62390273b98846f49671cecd78, 4761D3392092F9CA6036B53DC92C6D7F3D597576) -->
+                  <span class="method-name">encrypt</span>
+                  <span class="parameters">(password123, 1484161696d0ca62390273b98846f49671cecd78, 4761D3392092F9CA6036B53DC92C6D7F3D597576)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mycompany.fusionauth.plugins.MyExamplePasswordEncryptorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt">
+                  </a> <!-- encrypt -->
+                  <span class="method-name">encrypt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltAppendedPasswordEncryptorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt">
+                  </a> <!-- encrypt -->
+                  <span class="method-name">encrypt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltedPasswordEncryptorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt">
+                  </a> <!-- encrypt -->
+                  <span class="method-name">encrypt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt(supersecret, AGlXna8THOKvQJGBFentzM11DRO65gdWYwrUM9G4iFKY2DFt4qFc1/O/zaFTEikaOA==)">
+                  </a> <!-- encrypt(supersecret, AGlXna8THOKvQJGBFentzM11DRO65gdWYwrUM9G4iFKY2DFt4qFc1/O/zaFTEikaOA==) -->
+                  <span class="method-name">encrypt</span>
+                  <span class="parameters">(supersecret, AGlXna8THOKvQJGBFentzM11DRO65gdWYwrUM9G4iFKY2DFt4qFc1/O/zaFTEikaOA==)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt(supersecret, AJERV+ZvwakXg+AP09yPDJtwucf/9+jsoAGoeB8CMTzr0bsEQL3IQ4StQ/8/EmwHFA==)">
+                  </a> <!-- encrypt(supersecret, AJERV+ZvwakXg+AP09yPDJtwucf/9+jsoAGoeB8CMTzr0bsEQL3IQ4StQ/8/EmwHFA==) -->
+                  <span class="method-name">encrypt</span>
+                  <span class="parameters">(supersecret, AJERV+ZvwakXg+AP09yPDJtwucf/9+jsoAGoeB8CMTzr0bsEQL3IQ4StQ/8/EmwHFA==)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt(supersecret, AI0060+guxTYvJPL3kEqAzDwW3Avnpbd7+lTXM/K8ft7433JMy1PS/pSmhBIX3xotw==)">
+                  </a> <!-- encrypt(supersecret, AI0060+guxTYvJPL3kEqAzDwW3Avnpbd7+lTXM/K8ft7433JMy1PS/pSmhBIX3xotw==) -->
+                  <span class="method-name">encrypt</span>
+                  <span class="parameters">(supersecret, AI0060+guxTYvJPL3kEqAzDwW3Avnpbd7+lTXM/K8ft7433JMy1PS/pSmhBIX3xotw==)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt(supersecret, AM0P7hfdDHw2d0Y9lZoxN9FY5v7rn8cfEL1AGngrNmFxZLPZs832m+lWPlPIepyuoQ==)">
+                  </a> <!-- encrypt(supersecret, AM0P7hfdDHw2d0Y9lZoxN9FY5v7rn8cfEL1AGngrNmFxZLPZs832m+lWPlPIepyuoQ==) -->
+                  <span class="method-name">encrypt</span>
+                  <span class="parameters">(supersecret, AM0P7hfdDHw2d0Y9lZoxN9FY5v7rn8cfEL1AGngrNmFxZLPZs832m+lWPlPIepyuoQ==)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt(supersecret, AEhNvtxbnvkRnAEPRS6ol0Edi+WF6AtXOwDk3Eck/dfeUpCulPX1yVU4G9UpFRycjQ==)">
+                  </a> <!-- encrypt(supersecret, AEhNvtxbnvkRnAEPRS6ol0Edi+WF6AtXOwDk3Eck/dfeUpCulPX1yVU4G9UpFRycjQ==) -->
+                  <span class="method-name">encrypt</span>
+                  <span class="parameters">(supersecret, AEhNvtxbnvkRnAEPRS6ol0Edi+WF6AtXOwDk3Eck/dfeUpCulPX1yVU4G9UpFRycjQ==)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mycompany.fusionauth.plugins.ExampleSaltedSHA512PasswordEncryptorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="encrypt">
+                  </a> <!-- encrypt -->
+                  <span class="method-name">encrypt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Command line suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest&quot;/&gt;
+      &lt;class name=&quot;com.mycompany.fusionauth.plugins.ExampleFirebaseScryptPasswordEncryptorTest&quot;/&gt;
+      &lt;class name=&quot;com.mycompany.fusionauth.plugins.ExamplePHPMD5SaltedPasswordEncryptorTest&quot;/&gt;
+      &lt;class name=&quot;com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA1PasswordEncryptorTest&quot;/&gt;
+      &lt;class name=&quot;com.mycompany.fusionauth.plugins.ExampleLDAPSaltedSHA512PasswordEncryptorTest&quot;/&gt;
+      &lt;class name=&quot;com.mycompany.fusionauth.plugins.MyExamplePasswordEncryptorTest&quot;/&gt;
+      &lt;class name=&quot;com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltAppendedPasswordEncryptorTest&quot;/&gt;
+      &lt;class name=&quot;com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA256Keylength512PasswordHasherTest&quot;/&gt;
+      &lt;class name=&quot;com.mycompany.fusionauth.plugins.ExampleSaltedSHA512PasswordEncryptorTest&quot;/&gt;
+      &lt;class name=&quot;com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest&quot;/&gt;
+      &lt;class name=&quot;com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltedPasswordEncryptorTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (11 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(23);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'encrypt')
+data.setCell(0, 2, 'com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA256Keylength512PasswordHasherTest')
+data.setCell(0, 3, 285);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'encrypt')
+data.setCell(1, 2, 'com.mycompany.fusionauth.plugins.ExampleFirebaseScryptPasswordEncryptorTest')
+data.setCell(1, 3, 278);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'encrypt')
+data.setCell(2, 2, 'com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA256Keylength512PasswordHasherTest')
+data.setCell(2, 3, 255);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'encrypt')
+data.setCell(3, 2, 'com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest')
+data.setCell(3, 3, 231);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'encrypt')
+data.setCell(4, 2, 'com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA1PasswordEncryptorTest')
+data.setCell(4, 3, 151);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Should_ThrowException_When_MemoryGreaterThan16_777_215Kibibytes')
+data.setCell(5, 2, 'com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest')
+data.setCell(5, 3, 143);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'encrypt')
+data.setCell(6, 2, 'com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA1PasswordEncryptorTest')
+data.setCell(6, 3, 132);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'encrypt')
+data.setCell(7, 2, 'com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest')
+data.setCell(7, 3, 111);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'encrypt')
+data.setCell(8, 2, 'com.mycompany.fusionauth.plugins.ExamplePHPMD5SaltedPasswordEncryptorTest')
+data.setCell(8, 3, 30);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'encrypt')
+data.setCell(9, 2, 'com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest')
+data.setCell(9, 3, 19);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'encrypt')
+data.setCell(10, 2, 'com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest')
+data.setCell(10, 3, 17);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'encrypt')
+data.setCell(11, 2, 'com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest')
+data.setCell(11, 3, 14);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'encrypt')
+data.setCell(12, 2, 'com.mycompany.fusionauth.plugins.ExamplePHPMD5SaltedPasswordEncryptorTest')
+data.setCell(12, 3, 12);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'encrypt')
+data.setCell(13, 2, 'com.mycompany.fusionauth.plugins.ExamplePHPMD5SaltedPasswordEncryptorTest')
+data.setCell(13, 3, 8);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'encrypt')
+data.setCell(14, 2, 'com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest')
+data.setCell(14, 3, 6);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'encrypt')
+data.setCell(15, 2, 'com.mycompany.fusionauth.plugins.ExampleLDAPSaltedSHA512PasswordEncryptorTest')
+data.setCell(15, 3, 2);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'encrypt')
+data.setCell(16, 2, 'com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltAppendedPasswordEncryptorTest')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'Should_ThrowException_When_MemoryLessThan1')
+data.setCell(17, 2, 'com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'encrypt')
+data.setCell(18, 2, 'com.mycompany.fusionauth.plugins.MyExamplePasswordEncryptorTest')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'encrypt')
+data.setCell(19, 2, 'com.mycompany.fusionauth.plugins.ExampleSaltedSHA512PasswordEncryptorTest')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'encrypt')
+data.setCell(20, 2, 'com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltedPasswordEncryptorTest')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'Should_ThrowException_When_TimeCostLessThan1')
+data.setCell(21, 2, 'com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest')
+data.setCell(21, 3, 1);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'Should_ThrowException_When_ParallelismLessThan1')
+data.setCell(22, 2, 'com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest')
+data.setCell(22, 3, 0);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">encrypt(supersecret, AJERV+ZvwakXg+AP09yPDJtwucf/9+jsoAGoeB8CMTzr0bsEQL3IQ4StQ/8/EmwHFA==)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">encrypt(supersecret, AEhNvtxbnvkRnAEPRS6ol0Edi+WF6AtXOwDk3Eck/dfeUpCulPX1yVU4G9UpFRycjQ==)</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">encrypt(supersecret, AI0060+guxTYvJPL3kEqAzDwW3Avnpbd7+lTXM/K8ft7433JMy1PS/pSmhBIX3xotw==)</span>
+                <span class="method-start">134 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">encrypt(supersecret, AM0P7hfdDHw2d0Y9lZoxN9FY5v7rn8cfEL1AGngrNmFxZLPZs832m+lWPlPIepyuoQ==)</span>
+                <span class="method-start">141 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">encrypt(supersecret, AGlXna8THOKvQJGBFentzM11DRO65gdWYwrUM9G4iFKY2DFt4qFc1/O/zaFTEikaOA==)</span>
+                <span class="method-start">158 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mycompany.fusionauth.plugins.ExampleFirebaseScryptPasswordEncryptorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">encrypt</span>
+                <span class="method-start">178 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mycompany.fusionauth.plugins.ExamplePHPMD5SaltedPasswordEncryptorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">encrypt($P$9IQRaTwmfeRo7ud9Fh4E2PdI0S3r.L0, 2048, eRo7ud9Fh4E2PdI0S3r.L0, IQRaTwmf, test12345)</span>
+                <span class="method-start">458 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">encrypt($P$Buvd5FQxkeXJnDarN7..wRMwRKJeZ40, 8192, eXJnDarN7..wRMwRKJeZ40, uvd5FQxk, !?!#?#?#$&@&@!&@)</span>
+                <span class="method-start">489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">encrypt($P$BVaXtDXwf/ceSVp8VpLKx8bS2Y4O5F/, 8192, /ceSVp8VpLKx8bS2Y4O5F/, VaXtDXwf, 123456)</span>
+                <span class="method-start">505 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA1PasswordEncryptorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">encrypt(password123, 1484161696d0ca62390273b98846f49671cecd78, 4761D3392092F9CA6036B53DC92C6D7F3D597576)</span>
+                <span class="method-start">518 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">encrypt(password123, ea95629c7954d73ea670f07a798e9fd4ab907593, 9480AD9A59CB5053B832BA5E731AFCD1F78068EC)</span>
+                <span class="method-start">653 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mycompany.fusionauth.plugins.ExampleLDAPSaltedSHA512PasswordEncryptorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">encrypt</span>
+                <span class="method-start">805 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mycompany.fusionauth.plugins.MyExamplePasswordEncryptorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">encrypt</span>
+                <span class="method-start">807 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltAppendedPasswordEncryptorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">encrypt</span>
+                <span class="method-start">808 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA256Keylength512PasswordHasherTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">encrypt(password, jVqbuA9k2Mlo37OWXBMKLw==, LjFqvhPuUHJdQvWIwVQfqxjeujAWqG/DVQRFoOv62/cTznl9ob4jwWwY6i1RrwGv...)</span>
+                <span class="method-start">811 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">encrypt(password, XnYZtiSCmFE5HF/ZplNCow==, OFb32+cOm0sgtEcmNiGC83A27Sk1gb0fynv0RUXBfFXEJ/EieUPlx4uDAGA/q0/F...)</span>
+                <span class="method-start">1097 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mycompany.fusionauth.plugins.ExampleSaltedSHA512PasswordEncryptorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">encrypt</span>
+                <span class="method-start">1354 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mycompany.fusionauth.plugins.ExampleArgon2idPasswordEncryptorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Should_ThrowException_When_MemoryGreaterThan16_777_215Kibibytes</span>
+                <span class="method-start">1356 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_ThrowException_When_MemoryLessThan1</span>
+                <span class="method-start">1499 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_ThrowException_When_ParallelismLessThan1</span>
+                <span class="method-start">1500 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_ThrowException_When_TimeCostLessThan1</span>
+                <span class="method-start">1500 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">encrypt</span>
+                <span class="method-start">1501 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltedPasswordEncryptorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">encrypt</span>
+                <span class="method-start">1733 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
