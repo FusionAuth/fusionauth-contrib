@@ -30,8 +30,6 @@ import java.security.MessageDigest;
 
 /**
  * This example code is a starting point to build your own hashing algorithm in order to import users into FusionAuth.
- *
- * @author Daniel DeGroff
  */
 public class ExampleFirebaseScryptPasswordEncryptor implements PasswordEncryptor {
 
