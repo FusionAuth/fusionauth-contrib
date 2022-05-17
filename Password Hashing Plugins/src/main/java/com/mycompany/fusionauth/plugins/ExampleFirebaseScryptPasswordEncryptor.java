@@ -36,6 +36,7 @@ public class ExampleFirebaseScryptPasswordEncryptor implements PasswordEncryptor
   private static final Charset CHARSET = StandardCharsets.US_ASCII;
   private static final String CIPHER = "AES/CTR/NoPadding";
 
+// tag::scryptParameters[]
   /* Firebase Scrypt Parameters. You can find the correct settings for your Fireabase project 
     by opening the Firebase console, navigating to the Authentication panel, and clicking
     on the 3 dots near the the **Add User** button. Then select **Password hash parameters**.
@@ -43,6 +44,7 @@ public class ExampleFirebaseScryptPasswordEncryptor implements PasswordEncryptor
   private static final int memcost = 14;
   private static final String saltSep = "Bw==";
   private static final String base64_signer_key = "GhlZmw+EylyJl3fhsIOa+bmAEP1sYSHfZargl1unu/5mCp7pi818imxZOdSjM1558T+XU3cBflyr5HDghZqv7Q==";
+// end::scryptParameters[]
 
   @Override
   public int defaultFactor() {
