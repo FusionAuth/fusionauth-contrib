@@ -37,7 +37,7 @@ public class ExampleFirebaseScryptPasswordEncryptor implements PasswordEncryptor
   private static final String CIPHER = "AES/CTR/NoPadding";
 
 // tag::scryptParameters[]
-  /* Firebase Scrypt Parameters. You can find the correct settings for your Fireabase project 
+  /* Firebase Scrypt Parameters. You can find the correct settings for your Firebase project 
     by opening the Firebase console, navigating to the Authentication panel, and clicking
     on the 3 dots near the the **Add User** button. Then select **Password hash parameters**.
     This will open a modal with the parameters needed below. Copy them here */
