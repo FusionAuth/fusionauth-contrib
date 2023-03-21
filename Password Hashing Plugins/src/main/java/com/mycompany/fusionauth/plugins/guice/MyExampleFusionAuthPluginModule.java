@@ -41,10 +41,13 @@ public class MyExampleFusionAuthPluginModule extends AbstractModule {
     // TODO :
     //   1. Add one or more bindings here
     //   2. Name your binding. This will be the value you set in the 'encryptionScheme' on the user to utilize this encryptor.
+    //      - Note, as a best practice, namespace your plugin with a prefix such as 'custom-' to avoid any future conflicts with new
+    //        hashing algorithms that FusionAuth may ship in the future. For example, your 'custom-argon2id'.
     //   3. Delete any example code you don't use and do not want in your plugin. In addition to the bindings, you should delete any corresponding classes and tests you do not use in your plugin.
 
     // Start with this example and implement it.
     passwordEncryptorMapBinder.addBinding("example-hash").to(MyExamplePasswordEncryptor.class);
+
 
     //
     // Below are Functional examples
