@@ -17,6 +17,7 @@ package com.mycompany.fusionauth.plugins.guice;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.multibindings.MapBinder;
+import com.mycompany.fusionauth.plugins.ExampleASPIdentityV2PasswordEncryptor;
 import com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltAppendedPasswordEncryptor;
 import com.mycompany.fusionauth.plugins.ExampleCustomMD5SaltedPasswordEncryptor;
 import com.mycompany.fusionauth.plugins.ExampleFirebaseScryptPasswordEncryptor;
@@ -77,6 +78,9 @@ public class MyExampleFusionAuthPluginModule extends AbstractModule {
     passwordEncryptorMapBinder.addBinding("example-salted-pbkdf2-hmac-sha1-10000").to(ExamplePBDKF2HMACSHA1PasswordEncryptor.class);
 
     // Example Firebase Scrypt 
-    passwordEncryptorMapBinder.addBinding("example-salted-firebase-scrypt").to(ExampleFirebaseScryptPasswordEncryptor.class);    
+    passwordEncryptorMapBinder.addBinding("example-salted-firebase-scrypt").to(ExampleFirebaseScryptPasswordEncryptor.class);  
+    
+    // Example ASP Identity V2 Hasher 
+    passwordEncryptorMapBinder.addBinding("example-asp-identity-v2").to(ExampleASPIdentityV2PasswordEncryptor.class);  
   }
 }
