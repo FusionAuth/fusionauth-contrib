@@ -1,0 +1,21 @@
+{
+    "name": "Java Development Container",
+    "dockerFile": "Dockerfile",
+    "forwardPorts": [],
+    "postCreateCommand": "",
+    "remoteUser": "root",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "java.jdt.ls.java.home": "/usr/lib/jvm/java-21-openjdk"
+            },
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "redhat.java",
+                "vscjava.vscode-maven"
+            ]
+        }
+    }
+}
