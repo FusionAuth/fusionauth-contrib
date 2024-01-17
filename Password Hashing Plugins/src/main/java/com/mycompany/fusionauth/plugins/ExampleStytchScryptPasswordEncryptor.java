@@ -18,7 +18,6 @@ package com.mycompany.fusionauth.plugins;
 import io.fusionauth.plugin.spi.security.PasswordEncryptor;
 import com.lambdaworks.crypto.SCrypt;
 import org.apache.commons.codec.binary.Base64;
-
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
