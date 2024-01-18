@@ -4,7 +4,6 @@
     "forwardPorts": [],
     "postCreateCommand": "",
     "remoteUser": "root",
-    "workspaceFolder": "/workspace",
     "customizations": {
         "vscode": {
             "settings": {
