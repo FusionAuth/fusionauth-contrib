@@ -4,19 +4,7 @@ Community contributed examples and code.
 
 ## How to build the password hashing project
 
-- Install Docker.
-- Clone this project locally from GitHub
-- Open a terminal in the directory and run the code below.
-
-```bash
-docker run -it --name javabox -v .:/workspace richardjecooke/javaimage
-# inside the docker container:
-cd "Password Hashing Plugins";
-mvn dependency:resolve;
-mvn clean install; # .jar file will be available in the target directory if all tests pass
-# /opt/savant-1.0.0/bin/sb build; # you don't need to Savant to build
-exit
-```
+Please see the instructions in the `Password Hashing Plugins/README.md` file
 
 ## Credits
 
