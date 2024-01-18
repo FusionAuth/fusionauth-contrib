@@ -73,6 +73,8 @@ exit
 
 ## OBSOLETE - Build with Savant
 
+Savant fails with error `The license [PDDL-1.0] is not an allowed license type`.
+
 **Note:** This project uses the Savant build tool. To compile using Savant, follow these instructions:
 
 ```bash
