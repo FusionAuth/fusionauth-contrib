@@ -64,7 +64,7 @@ exit
 
 ## Deploy the plugin
 
-- Copy `fusionauth-example-password-encryptor-0.1.0.jar` to your FusionAuth `plugins` directory and restarst FusionAuth.
+- Copy `fusionauth-example-password-encryptor-0.1.0.jar` to your FusionAuth `plugins` directory and restart FusionAuth.
     - If using FusionAuth in Docker, where the container is called `fa` this command will be:
     ```bash
     docker exec fa mkdir /usr/local/fusionauth/plugins &&
