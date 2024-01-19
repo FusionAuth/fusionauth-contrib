@@ -69,7 +69,7 @@ exit
     - If using FusionAuth in Docker, where the container is called `fa` this command will be:
     ```bash
     docker exec fa mkdir /usr/local/fusionauth/plugins &&
-    docker cp "fusionauth-example-password-encryptor-0.1.0.jar" fa:/usr/local/fusionauth/plugins/fusionauth-example-password-encryptor-0.1.0.jar
+    docker cp "Password Hashing Plugins/target/fusionauth-example-password-encryptor-0.1.0.jar" fa:/usr/local/fusionauth/plugins/fusionauth-example-password-encryptor-0.1.0.jar
     ```
 
 ## OBSOLETE - Build with Savant

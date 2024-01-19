@@ -42,8 +42,9 @@ public class ExampleStytchScryptPasswordEncryptor implements PasswordEncryptor {
   public String encrypt(String password, String salt, int factor) {
     try {
         Charset Charset = StandardCharsets.US_ASCII;
-        byte[] hashedBytes = SCrypt.scrypt(password.getBytes(Charset), salt.getBytes(Charset), N_CpuCost, R_MemoryCost_BlockSize, P_Parallelization, KeyLength);
-        return new String(Base64.encodeBase64(hashedBytes))
+        String urlSafeSalt = salt.replace('+', '-').replace('/', '_'); // because Stytch exports the latter type of Base 64, and Java/FusionAuth require the former
+        byte[] hashedBytes = SCrypt.scrypt(password.getBytes(Charset), urlSafeSalt.getBytes(Charset), N_CpuCost, R_MemoryCost_BlockSize, P_Parallelization, KeyLength);
+        return new String(Base64.encodeBase64(hashedBytes));
     }
     catch (Exception e) {
       throw new RuntimeException(e);
