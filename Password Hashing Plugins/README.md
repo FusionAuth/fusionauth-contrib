@@ -15,10 +15,10 @@ If you want a simple example to follow along in implementing your own hashing al
 ## Build and test
 
 - Clone this repository from GitHub.
-- Then there are two ways to build this project, depending if you have:
+- Then there are two ways to build this project, depending on if you have:
     - Java installed locally, or
     - Docker installed locally.
-- Note at the time of writing that the `ExampleArgon2idPasswordEncryptorTest.java` tests fail and you need to comment them out to compile the project.
+- Note at the time of writing that the `ExampleArgon2idPasswordEncryptorTest.java` tests fail, and you need to comment them out to compile the project.
 
 ### Option 1: Build with local Java
 
@@ -31,13 +31,14 @@ mvn clean install
 
 ### Option 2: Build with Docker
 
-The .jar file will be created in the container, and available on your host too, as the volume shares your local directory.
+If you build with Docker, the .jar file will be created in the container, but available on your host too, as the volume shares your local directory. There are two options: VS Code or manually using Docker:
 
 #### If you are using VS Code, use the DevContainer
 
-- Install the "Remote Containers" extension pack
+- Install the "Remote Containers" extension pack in VS Code
 - After opening the repository in VS Code, at the bottom left, click the >< container icon and choose 'Reopen in container'.
-- Choose `Terminal` - `New Terminal` from the menu and enter:
+- Your files should open in the sidebar. If they don't, open them manually from the file menu to `/workspaces`.
+- Choose `Terminal` — `New Terminal` from the menu and enter:
     ```bash
     cd "Password Hashing Plugins"
     mvn clean install
