@@ -37,12 +37,13 @@ public class ExampleStytchScryptPasswordEncryptor implements PasswordEncryptor {
     return 0;
   }
 
+  // We return Base64 with + and / symbols, not - and _ symbols
   @Override
   public String encrypt(String password, String salt, int factor) {
     try {
         Charset Charset = StandardCharsets.US_ASCII;
         byte[] hashedBytes = SCrypt.scrypt(password.getBytes(Charset), salt.getBytes(Charset), N_CpuCost, R_MemoryCost_BlockSize, P_Parallelization, KeyLength);
-        return new String(Base64.encodeBase64(hashedBytes)).replace('+', '-').replace('/', '_');
+        return new String(Base64.encodeBase64(hashedBytes))
     }
     catch (Exception e) {
       throw new RuntimeException(e);

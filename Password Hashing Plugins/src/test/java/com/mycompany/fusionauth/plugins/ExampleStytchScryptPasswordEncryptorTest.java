@@ -13,13 +13,13 @@ public class ExampleStytchScryptPasswordEncryptorTest {
   @Test
   public void encrypt1() {
     String hash = encryptor.encrypt("averylongandunguessablepasswordwithlotsofrandominfooofisjoafasnr;,n1", "BbV-sGQqUIX1NwE6uqtSITv4fa1iMw==", 0);
-    Assert.assertEquals(hash, "uiOC_BwbKta9R9QL6Ss6KTDpCcULh9_zhObl5j4398M=");
+    Assert.assertEquals(hash, "uiOC/BwbKta9R9QL6Ss6KTDpCcULh9/zhObl5j4398M=");
   }
 
   @Test
   public void encrypt2() {
     String hash = encryptor.encrypt("averylongandunguessablepasswordwithlotsofrandominfooofisjoafasnr;,n2", "zKia-0BdIFKCzWbzXbj3qrhBnbiWNg==", 0);
-    Assert.assertEquals(hash, "8dg6AaIWPfcLTQU7lb4H-CI49dHeqaBXfFE1ogb2qRQ=");
+    Assert.assertEquals(hash, "8dg6AaIWPfcLTQU7lb4H+CI49dHeqaBXfFE1ogb2qRQ=");
   }
 
   @Test
