@@ -37,14 +37,13 @@ public class ExampleStytchScryptPasswordEncryptor implements PasswordEncryptor {
     return 0;
   }
 
-  // We return Base64 with + and / symbols, not - and _ symbols
   @Override
   public String encrypt(String password, String salt, int factor) {
     try {
         Charset Charset = StandardCharsets.US_ASCII;
         String urlSafeSalt = salt.replace('+', '-').replace('/', '_'); // because Stytch exports the latter type of Base 64, and Java/FusionAuth require the former
         byte[] hashedBytes = SCrypt.scrypt(password.getBytes(Charset), urlSafeSalt.getBytes(Charset), N_CpuCost, R_MemoryCost_BlockSize, P_Parallelization, KeyLength);
-        return new String(Base64.encodeBase64(hashedBytes));
+        return new String(Base64.encodeBase64(hashedBytes)); // Return Base64 with + and / symbols, not - and _ symbols
     }
     catch (Exception e) {
       throw new RuntimeException(e);
