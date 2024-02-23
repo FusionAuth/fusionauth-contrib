@@ -26,7 +26,7 @@ import com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA256KeyLength512Passw
 import com.mycompany.fusionauth.plugins.ExamplePHPMD5SaltedPasswordEncryptor;
 import com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptor;
 import com.mycompany.fusionauth.plugins.ExampleSaltedSHA512PasswordEncryptor;
-import com.mycompany.fusionauth.plugins.ExampleStytchScryptPasswordEncryptor;
+import com.mycompany.fusionauth.plugins.ExampleWordPressPhpassPasswordEncryptor;
 import com.mycompany.fusionauth.plugins.MyExamplePasswordEncryptor;
 import io.fusionauth.plugin.spi.PluginModule;
 import io.fusionauth.plugin.spi.security.PasswordEncryptor;

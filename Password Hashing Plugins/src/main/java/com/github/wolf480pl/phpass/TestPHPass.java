@@ -2,7 +2,6 @@ package com.github.wolf480pl.phpass;
 
 import junit.framework.Assert;
 import junit.framework.TestCase;
-
 import org.junit.Test;
 
 public class TestPHPass extends TestCase {

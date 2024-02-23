@@ -120,10 +120,6 @@
           <groupId>org.apache.ant</groupId>
         </exclusion>
         <exclusion>
-          <artifactId>junit</artifactId>
-          <groupId>junit</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>guice</artifactId>
           <groupId>com.google.inject</groupId>
         </exclusion>
@@ -132,6 +128,12 @@
           <groupId>org.yaml</groupId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.2</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <distributionManagement>
