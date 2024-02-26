@@ -15,6 +15,7 @@
  */
 package com.mycompany.fusionauth.plugins;
 
+import java.util.Random;
 import io.fusionauth.plugin.spi.security.PasswordEncryptor;
 import com.github.wolf480pl.phpass.PHPass;
 
@@ -42,11 +43,15 @@ public class ExampleWordPressPhpassPasswordEncryptor implements PasswordEncrypto
           return phpass.HashPassword(password);
         if (phpass.CheckPassword(password, previousHash))
           return previousHash;
-        return "-1";
+        return getRandomPassword();
     }
     catch (Exception e) {
       throw new RuntimeException(e);
     }
+  }
+
+  String getRandomPassword() {
+    return String.valueOf(new Random().nextInt(90000000) + 10000000);
   }
 
 }
