@@ -71,6 +71,7 @@ exit
     docker exec fa mkdir /usr/local/fusionauth/plugins &&
     docker cp "Password Hashing Plugins/target/fusionauth-example-password-encryptor-0.1.0.jar" fa:/usr/local/fusionauth/plugins/fusionauth-example-password-encryptor-0.1.0.jar
     ```
+- Remember to start FusionAuth with Docker so the container exists for you to copy in the plugin, then stop and restart the container so that FusionAuth reboots and enables the plugin.
 
 ## OBSOLETE - Build with Savant
 

@@ -16,9 +16,8 @@
 package com.mycompany.fusionauth.plugins;
 
 import java.util.Random;
-import java.util.Base64;
+import com.mycompany.fusionauth.util.Base64Tools;
 import io.fusionauth.plugin.spi.security.PasswordEncryptor;
-// import org.apache.commons.codec.binary.Base64;
 import com.github.wolf480pl.phpass.PHPass;
 
 public class ExampleWordPressPhpassPasswordEncryptor implements PasswordEncryptor {
@@ -29,23 +28,23 @@ public class ExampleWordPressPhpassPasswordEncryptor implements PasswordEncrypto
   }
 
   /**
-   * @param password the plaintext password to encrypt
-   * @param salt not the salt. rather give the full previous hashed password in its entirety.
-   *             the salt is included in the hash. if this password has never been hashed before
-   *             then leave salt as null.
+   * @param password the plaintext password to encrypt, not in base64 as it comes from the user input
+   * @param salt not the salt. rather give the full previous hashed password in its entirety
+   *             encoded in base64. the salt is included in the hash. if this password has
+   *             never been hashed before then leave salt as null.
    * @param factor should be 8 for wordpress
    * @return the encrypted password including the salt. salt does not need to be stored separately.
    */
   @Override
   public String encrypt(String password, String salt, int factor) {
     try {
-        String previousHash = decode64(salt);
+        String previousHash = Base64Tools.decode64(salt);
         PHPass phpass = new PHPass(factor);
         if (previousHash == null)
-          return encode64(phpass.HashPassword(password));
-        if (phpass.CheckPassword(decode64(password), previousHash))
-          return encode64(previousHash);
-        return encode64(getRandomPassword());
+          return Base64Tools.encode64(phpass.HashPassword(password));
+        if (phpass.CheckPassword(password, previousHash))
+          return Base64Tools.encode64(previousHash);
+        return Base64Tools.encode64(getRandomPassword());
     }
     catch (Exception e) {
       throw new RuntimeException(e);
@@ -54,16 +53,6 @@ public class ExampleWordPressPhpassPasswordEncryptor implements PasswordEncrypto
 
   String getRandomPassword() {
     return String.valueOf(new Random().nextInt(90000000) + 10000000);
-  }
-
-  String encode64(String s) {
-    if (s == null) return null;
-    return Base64.getEncoder().encodeToString(s.getBytes());
-  }
-
-  String decode64(String s) {
-    if (s == null) return null;
-    return new String(Base64.getDecoder().decode(s));
   }
 
 }
