@@ -16,7 +16,9 @@
 package com.mycompany.fusionauth.plugins;
 
 import java.util.Random;
+import java.util.Base64;
 import io.fusionauth.plugin.spi.security.PasswordEncryptor;
+// import org.apache.commons.codec.binary.Base64;
 import com.github.wolf480pl.phpass.PHPass;
 
 public class ExampleWordPressPhpassPasswordEncryptor implements PasswordEncryptor {
@@ -37,13 +39,13 @@ public class ExampleWordPressPhpassPasswordEncryptor implements PasswordEncrypto
   @Override
   public String encrypt(String password, String salt, int factor) {
     try {
-        String previousHash = salt;
+        String previousHash = decode64(salt);
         PHPass phpass = new PHPass(factor);
         if (previousHash == null)
-          return phpass.HashPassword(password);
-        if (phpass.CheckPassword(password, previousHash))
-          return previousHash;
-        return getRandomPassword();
+          return encode64(phpass.HashPassword(password));
+        if (phpass.CheckPassword(decode64(password), previousHash))
+          return encode64(previousHash);
+        return encode64(getRandomPassword());
     }
     catch (Exception e) {
       throw new RuntimeException(e);
@@ -52,6 +54,16 @@ public class ExampleWordPressPhpassPasswordEncryptor implements PasswordEncrypto
 
   String getRandomPassword() {
     return String.valueOf(new Random().nextInt(90000000) + 10000000);
+  }
+
+  String encode64(String s) {
+    if (s == null) return null;
+    return Base64.getEncoder().encodeToString(s.getBytes());
+  }
+
+  String decode64(String s) {
+    if (s == null) return null;
+    return new String(Base64.getDecoder().decode(s));
   }
 
 }
