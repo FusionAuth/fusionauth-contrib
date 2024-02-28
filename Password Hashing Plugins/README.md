@@ -18,7 +18,7 @@ If you want a simple example to follow along in implementing your own hashing al
 - Then there are two ways to build this project, depending on if you have:
     - Java installed locally, or
     - Docker installed locally.
-- Note at the time of writing that the `ExampleArgon2idPasswordEncryptorTest.java` tests fail, and you need to comment them out to compile the project.
+- Note at the time of writing that the `ExampleArgon2idPasswordEncryptorTest.java` tests fail in the VS Code dev container, and you need to comment them out to compile the project.
 
 ### Option 1: Build with local Java
 
