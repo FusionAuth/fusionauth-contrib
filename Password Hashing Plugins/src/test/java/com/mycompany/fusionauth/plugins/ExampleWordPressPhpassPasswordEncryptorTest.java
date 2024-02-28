@@ -13,6 +13,16 @@ public class ExampleWordPressPhpassPasswordEncryptorTest {
   }
 
   @Test
+  public void TestExistingHashFails() {
+    PasswordEncryptor encryptor = new ExampleWordPressPhpassPasswordEncryptor();
+    String result = encryptor.encrypt("bitnami2", "$P$BVrdsW/NUuXDi0Od0uUdk2SnJHHmQ01", 8);
+    String result2 = encryptor.encrypt("bitnami2", "$P$BVrdsW/NUuXDi0Od0uUdk2SnJHHmQ01", 8);
+    Assert.assertNotEquals(result, "$P$BVrdsW/NUuXDi0Od0uUdk2SnJHHmQ01");
+    Assert.assertEquals(result.length(), 8);
+    Assert.assertNotEquals(result, result2);
+  }
+
+  @Test
   public void TestNewHash() {
     PasswordEncryptor encryptor = new ExampleWordPressPhpassPasswordEncryptor();
     String result = encryptor.encrypt("bitnami", null, 8);
