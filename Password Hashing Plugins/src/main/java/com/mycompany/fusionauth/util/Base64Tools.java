@@ -144,4 +144,15 @@ public class Base64Tools {
 
     return sb.toString();
   }
+
+  public static String encode64(String s) {
+    if (s == null) return null;
+    return Base64.getEncoder().encodeToString(s.getBytes());
+  }
+
+  public static String decode64(String s) {
+    if (s == null) return null;
+    return new String(Base64.getDecoder().decode(s));
+  }
+
 }
