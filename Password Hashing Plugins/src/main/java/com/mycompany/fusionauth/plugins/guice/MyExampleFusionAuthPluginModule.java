@@ -26,6 +26,7 @@ import com.mycompany.fusionauth.plugins.ExamplePBDKF2HMACSHA256KeyLength512Passw
 import com.mycompany.fusionauth.plugins.ExamplePHPMD5SaltedPasswordEncryptor;
 import com.mycompany.fusionauth.plugins.ExampleRfc2898DeriveBytesPasswordEncryptor;
 import com.mycompany.fusionauth.plugins.ExampleSaltedSHA512PasswordEncryptor;
+import com.mycompany.fusionauth.plugins.ExampleStytchScryptPasswordEncryptor;
 import com.mycompany.fusionauth.plugins.MyExamplePasswordEncryptor;
 import io.fusionauth.plugin.spi.PluginModule;
 import io.fusionauth.plugin.spi.security.PasswordEncryptor;
@@ -77,10 +78,13 @@ public class MyExampleFusionAuthPluginModule extends AbstractModule {
     // Example PBKDF2 with a SHA-1
     passwordEncryptorMapBinder.addBinding("example-salted-pbkdf2-hmac-sha1-10000").to(ExamplePBDKF2HMACSHA1PasswordEncryptor.class);
 
-    // Example Firebase Scrypt 
-    passwordEncryptorMapBinder.addBinding("example-salted-firebase-scrypt").to(ExampleFirebaseScryptPasswordEncryptor.class);  
-    
-    // Example ASP Identity V2 Hasher 
-    passwordEncryptorMapBinder.addBinding("example-asp-identity-v2").to(ExampleASPIdentityV2PasswordEncryptor.class);  
+    // Example Firebase Scrypt
+    passwordEncryptorMapBinder.addBinding("example-salted-firebase-scrypt").to(ExampleFirebaseScryptPasswordEncryptor.class);
+
+    // Example ASP Identity V2 Hasher
+    passwordEncryptorMapBinder.addBinding("example-asp-identity-v2").to(ExampleASPIdentityV2PasswordEncryptor.class);
+
+    // Example Stytch Scrypt
+    passwordEncryptorMapBinder.addBinding("example-salted-stytch-scrypt").to(ExampleStytchScryptPasswordEncryptor.class);
   }
 }
