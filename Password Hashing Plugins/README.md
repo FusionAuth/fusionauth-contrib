@@ -18,6 +18,7 @@ If you want a simple example to follow along in implementing your own hashing al
 - Then there are two ways to build this project, depending on if you have:
     - Java installed locally, or
     - Docker installed locally.
+- Note at the time of writing that the `ExampleArgon2idPasswordEncryptorTest.java` tests fail in the VS Code dev container, and you need to comment them out to compile the project.
 
 ### Option 1: Build with local Java
 
@@ -70,6 +71,8 @@ exit
     docker exec fa mkdir /usr/local/fusionauth/plugins &&
     docker cp "Password Hashing Plugins/target/fusionauth-example-password-encryptor-0.1.0.jar" fa:/usr/local/fusionauth/plugins/fusionauth-example-password-encryptor-0.1.0.jar
     ```
+
+- Remember to start FusionAuth with Docker so the container exists for you to copy in the plugin, then stop and restart the container so that FusionAuth reboots and enables the plugin.
 
 ## OBSOLETE - Build with Savant
 
